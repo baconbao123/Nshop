@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding:0;
+}
+.container-topbar{
+    width: 100%;
+    padding-top: 8px;
+    max-height: 52px;
+    border-bottom:1px solid #efefef ;
+    position: fixed;
+    top:0;
+    z-index: 99;
+    background-color: #fff;
+}
+    .topbar{
+        max-width: 1180px;
+        height: 52px;
+        margin: auto;
+    } 
+.logo{
+    text-align: right;
+}
+.text-logo{
+    font-size: 18px;
+    font-weight: bold;
+}
+.input-icon-search{
+    border: none;
+    font-size: 16px;
+}
+.input-search{
+    font-size: 16px;
+    background-color: #E9ECEF;
+    border-left: none;
+    border: none;
+    padding: 7px;
+}
+.site-heard-user{
+    text-align: left;
+    margin-top: 5px;
+} 
+.site-heard-user a{
+    text-decoration: none;
+    color: #555555;
+    cursor: pointer;
+}
+.site-heard-user a span{
+    justify-items:center
+}
+.shopping-cart{
+    font-size: 25px;
+}
+.user{
+    font-size: 25px;
+}
+
+/*style nav bar*/
+.text{
+    margin-top: 60px;
+}
