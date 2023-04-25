@@ -1,0 +1,63 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+.container-navbar {
+   background-color: #003463;
+   max-height: 70px;
+   width: 100%;
+   margin-top: 10px;
+   z-index: 99;
+   border-bottom: 1px solid #efefef;
+}
+
+.nav .home-item,
+.nav .product-item,
+.nav .blog-item,
+.nav .store-item {
+   color: white;
+   text-decoration: none;
+   font-weight: bold;
+   font-size: 15px;
+   margin-right: -60px;
+}
+
+.nav-right {
+   display: flex;
+   align-items: center;
+   flex-wrap: nowrap;
+}
+
+.nav .mail-item,
+.nav .add-item {
+   text-decoration: none;
+   color: white;
+   font-size: 15px;
+   text-align: right;
+   flex-shrink: 0;
+   margin-left: 20px;
+
+}
+
+#dropdown .btn {
+   font-size: 0.6rem;
+   padding: 0.25rem 0.5rem;
+   background-color: #012644;
+   border: #012644;
+   border-radius: 0;
+}
+
+#dropdown .sale-item {
+   color: black;
+}
+
+#dropdown .phone-item {
+   color: black;
+   margin-left: 10px;
+   font-size: 15px;
+}
+
+#dropdown .icon {
+   color: rgb(118, 204, 235);
+}
