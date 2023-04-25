@@ -1,5 +1,5 @@
 import React from 'react'
-import Container from 'react-bootstrap/Container';
+import Container from 'react-bootstrap/Container';  
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
@@ -19,6 +19,7 @@ function Topbar() {
           <Row className='w-100' >
             <Col md={2} className='logo'>
               <img src={logo} width={40} />
+              
               <span className='text-logo'>NSHOP</span>
             </Col>
             <Col md={7}>

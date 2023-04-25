@@ -2,7 +2,7 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Container,Row,Col} from "react-bootstrap";
-
+import Body from './components/body/Body'
 import Topbar from './components/topbar';
 function App() {
   return (
@@ -14,6 +14,7 @@ function App() {
       <h1 className='text'>import no vao day nha anh </h1>
      
       {/* Sidebar TRUNG  NGUYEN */}
+      <Body></Body>
     </>  
 
   );
