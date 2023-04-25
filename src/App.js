@@ -1,23 +1,22 @@
-import { Container, Row, Col } from 'react-bootstrap';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import NavigationBar from './components/Nav/NavigationBar';
-import { Home, ProductsAll, Blog, Address } from './components/Nav';
+import NavigationBar from './components/navbar/NavigationBar';
+import { Home, ProductsAll, Blog, Address } from './components/navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-
+import {Container,Row,Col} from "react-bootstrap";
+import Body from './components/body/Body'
+import Topbar from './components/topbar';
 function App() {
    return (
       <>
          {/* TOP NAVIGATION -PHI LONG */}
-         <h1>import no vao day nhha Long</h1>
-
-         {/* BOT NAVIGATION -PHUONG ANH */}
-         <Container>
+      <Topbar/>
+     
+        {/* BOT NAVIGATION -PHUONG ANH */}
+        <Container>
             <Row>
                <Col>
                   <Router>
                      <NavigationBar />
-
                      <Routes>
                         <Route path="/" element={<Home />} />
                         <Route path="/productsall" element={<ProductsAll />} />
@@ -28,10 +27,12 @@ function App() {
                </Col>
             </Row>
          </Container>
+     
+      {/* Sidebar TRUNG  NGUYEN */}
+      <Body></Body>
+    </>  
 
-         {/* Sidebar TRUNG  NGUYEN */}
-      </>
-   );
+  );
 }
 
 export default App;
