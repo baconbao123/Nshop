@@ -7,7 +7,7 @@ import { MdSupportAgent } from 'react-icons/md';
 class NavigationBar extends Component {
    render() {
       return (
-         <Nav className="container-navbar d-flex align-items-center">
+         <Nav className="container-navbar ">
             <div className="navbar">
                <Container>
                   <Row className="navbar-item">
