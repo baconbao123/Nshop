@@ -10,7 +10,7 @@ function App() {
         {/* BOT NAVIGATION -PHUONG ANH */}
         <NavigationBar />
         <NavRoute />
-     
+        
       {/* Sidebar TRUNG  NGUYEN */}
       <Body></Body>
     </>  

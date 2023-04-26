@@ -4,18 +4,19 @@
 }
 
 .container-navbar {
-   background-color: #003463;
-   max-height: 100px;
    width: 100%;
+   background-color: #003463;
+   max-height: 95px;
    margin-top: 10px;
    z-index: 99;
    border-bottom: 1px solid #efefef;
 }
 
 .navbar {
-   max-width: 1180px;
-   height: 90px;
-   margin:  auto auto auto 260px;
+   width: 1320px;
+   max-height: 95px;
+   
+   margin:  auto;
 }
 
 .nav .home-item,
@@ -28,18 +29,13 @@
    font-size: 15px;
    margin-top: 40px;
    padding: 6px;
-   margin-left: 1px;
-
+   display: inline-block;
 }
 
-/* .nav-right {
-   display: flex;
-   align-items: center;
-   flex-wrap: nowrap;
-} */
 
 .nav .mail-item,
-.nav .add-item {
+.nav .add-item,
+.nav .dropdown .btn {
    text-decoration: none;
    color: rgb(255, 255, 255);
    font-size: 15px;
@@ -47,28 +43,28 @@
    flex-shrink: 0;
    margin-left: 20px;
    margin-top: 35px;
-   
+   display: inline-block;
 }
 
-#dropdown .btn {
-   font-size: 0.8rem;
-   padding: 0.3rem 0.5rem;
+.nav .dropdown .btn {
+   font-size: 0.7rem;
+   padding: 0.5rem 0.8rem;
    background-color: #012644;
    border: #012644;
    border-radius: 0;
    margin-top: 38px;
 }
 
-#dropdown .sale-item {
+.nav .dropdown .sale-item {
    color: black;
 }
 
-#dropdown .phone-item {
+.nav .dropdown .phone-item {
    color: black;
    margin-left: 10px;
    font-size: 15px;
 }
 
-#dropdown .icon {
+.nav .dropdown .icon {
    color: rgb(118, 204, 235);
 }
