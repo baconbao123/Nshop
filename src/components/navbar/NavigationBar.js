@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
 import './Css/style.css';
+import React, { Component } from 'react';
 import { Container, Row, Col, Nav, Dropdown } from 'react-bootstrap';
 import { AiOutlineMail, AiFillPhone } from 'react-icons/ai';
 import { MdSupportAgent } from 'react-icons/md';
@@ -7,11 +7,11 @@ import { MdSupportAgent } from 'react-icons/md';
 class NavigationBar extends Component {
    render() {
       return (
-         <Nav className="container-navbar ">
+         <Nav className="container-navbar">
             <div className="navbar">
                <Container>
                   <Row className="navbar-item">
-                     <Col md={2} lg={6} className="nav-left d-flex justify-content-between">
+                     <Col md={2} lg={4} className="nav-left d-flex justify-content">
                         <Nav.Link href="/" className="home-item">
                            <span>Trang chủ</span>
                         </Nav.Link>
@@ -28,26 +28,26 @@ class NavigationBar extends Component {
 
                      <Col md={2} lg={1} className="space"></Col>
 
-                     <Col lg={5} className="nav-right d-flex align-items-center">
-                        <Nav.Link href="#" className="mail-item" style={{ flexBasis: '50%' }}>
+                     <Col lg={7} className="nav-right d-flex justify-content">
+                        <Nav.Link href="#" className="mail-item">
                            <span>
                               <AiOutlineMail />
                               info@nshopvn.com
                            </span>
                         </Nav.Link>
-                        <Nav.Link href="#" className="add-item" style={{ flexBasis: '25%' }}>
+                        <Nav.Link href="#" className="add-item">
                            <span>
                               <AiFillPhone />
                               Tân Phú: 0902 643 978
                            </span>
                         </Nav.Link>
-                        <Nav.Link href="#" className="add-item" style={{ flexBasis: '25%' }}>
+                        <Nav.Link href="#" className="add-item">
                            <span>
                               <AiFillPhone />
                               Quận 9: 093 27 23 186
                            </span>
                         </Nav.Link>
-                        <Dropdown id="dropdown" style={{ flexBasis: '100px' }}>
+                        <Dropdown id="dropdown">
                            <Dropdown.Toggle variant="success">Liên hệ</Dropdown.Toggle>
                            <Dropdown.Menu>
                               <Dropdown.Item className='sale-item' disabled>
@@ -72,5 +72,7 @@ class NavigationBar extends Component {
       );
    }
 }
+
+
 
 export default NavigationBar;
