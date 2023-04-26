@@ -47,7 +47,7 @@ class NavigationBar extends Component {
                               </span>
                            </Nav.Link>
                            <Dropdown className="dropdown">
-                              <Dropdown.Toggle variant="success">Liên hệ</Dropdown.Toggle>
+                              <Dropdown.Toggle variant="primary">Liên hệ</Dropdown.Toggle>
                               <Dropdown.Menu>
                                  <Dropdown.Item className='sale-item' disabled>
                                     Bán hàng</Dropdown.Item>
