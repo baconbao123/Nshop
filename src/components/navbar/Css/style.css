@@ -18,6 +18,14 @@
    margin:  auto;
 }
 
+.nav .nav-link:hover{
+   color: white;
+}
+
+.nav .nav-link:focus{
+   color: white;
+}
+
 .nav .home-item,
 .nav .product-item,
 .nav .blog-item,
@@ -54,11 +62,6 @@
    border: #012644;
    border-radius: 0;
    margin-top: 38px;
-}
-
-.nav .dropdown .btn :hover{
-   
-
 }
 
 .nav .dropdown .sale-item {
