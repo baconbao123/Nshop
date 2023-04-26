@@ -28,17 +28,18 @@ export default function Slidebar() {
   const [eles,setElses]=useState([]);
   useEffect(() => {
 
-    setItems([{ add:'true',icon: ardyino, content: "Arduino" },
-    { add:'true',icon: cambien, content: "Cảm biến" },
+    setItems([{ add:'true',icon: ardyino, content: "Arduino",child:['Aruino Shield','Board Arduino','Phụ kiện Arduino']},
+    { add:'true',icon: cambien, content: "Cảm biến" , child:['Cảm biến âm thanh', 'Cảm biến ánh sáng','Cảm biến cân nặng (Loadcell)','Cảm biến chuyển động','Cảm biến độ đục của nước','Cảm biến dò line','Cảm biến độ pH','Cảm biến gió','Cảm biến hồng ngoại','Cảm biến khoảng cách vật cản']},
     { icon: combo, content: "Combo khuyến mãi" },
-    { add:'true',icon: denLed, content: "Đèn LED, Điều khiển LED" },
-    { add:'true',icon: dienDanDung, content: "Điện dân dụng và điện công nghiệp" },
-    { add:'true',icon: dienNangLuong, content: "Điện năng lượng mặt trời" },
-    { add:'true',icon: dongHo, content: "Đồng hồ vạn năng" },
-    { add:'true',icon: mayIn, content: "Máy in 3D công nghệ" },
-    { add:'true',icon: machDien, content: "Module,Mạch điện" },
-    { add:'true',icon: phuKien, content: "Phụ kiện dụng cụ" },
-    { add:'true',icon: robot, content: "Robot,Phụ kiện DIY" }
+    { add:'true',icon: denLed, content: "Đèn LED, Điều khiển LED",child:['Đèn báo', 'Đèn báo có còi','Đèn led dây','Đèn led thanh','Led đom đóm','Led RGB','Led siêu sáng','Led thông thường khác','Led UV'
+    ,'Mạch điều khiển LED', 'Phụ kiện ngành Led'] },
+    { add:'true',icon: dienDanDung, content: "Điện dân dụng và điện công nghiệp",child:['Cầu chì','CB tép (MCB)','Connector','Contactor','Dụng cụ, phụ kiện',' Linh kiện điện dân dụng','Relay nhiệt'] },
+    { add:'true',icon: dienNangLuong, content: "Điện năng lượng mặt trời",child:['Sạc và điều khiển sạc','Tấm pin năng lượng mặt trời'] },
+    { add:'true',icon: dongHo, content: "Đồng hồ vạn năng",child:[	'Đồng hồ vạn năng','Phụ kiện đồng vạn năng'] },
+    { add:'true',icon: mayIn, content: "Máy in 3D công nghệ",child:['Laser','Công nghệ'] },
+    { add:'true',icon: machDien, content: "Module,Mạch điện",child:['Âm thanh','Khuếch đại', 'Biến cao tần','Điều khiển động cơ','Dimer, Tạo xung',' Đồng hồ đo dòng điện,điện áp, công suất','Đồng hồ ddo nhiệt độ và độ ẩm','Đóng ngắt,Relay','Giao tiếp,Chuyển đổi'] },
+    { add:'true',icon: phuKien, content: "Phụ kiện dụng cụ",child:['Dụng cụ,Linh kiện cơ khí', ' Dụng cụ,Phụ kiện điện tử',' Máy hàn, khò', 'Phụ kiện làm mạch','Phụ kiện máy tính']},
+    { add:'true',icon: robot, content: "Robot,Phụ kiện DIY",child:['Bánh xe',' Bộ đếm sản phẩm', 'Con quay Spinner', 'Động cơ',' Giáo dục STEM','Mô hình Robot','Nam châm điện, van điện từ', 'Phụ kiện DIY',' Phụ kiện Robot',' Xi lanh Điện'] }
     ])
     setContacts([{ icon: facebook, content: "Linh kiện điện tử Nshop" },
     { icon: youtube, content: "Kênh Youtube của Nshop" },
@@ -55,7 +56,7 @@ export default function Slidebar() {
         {
           items.map((item, index) => (
             <li key={index} className='li'>
-              <Item icon={item.icon} content={item.content} add={item.add} ></Item>
+              <Item icon={item.icon} content={item.content} add={item.add} child={item.child} ></Item>
             </li>
           ))
         }
@@ -64,7 +65,7 @@ export default function Slidebar() {
       <ul className='ul'>
         {contacts.map((contact,index)=>(
           <li key={index} className='li'>
-            <Item icon={contact.icon} content={contact.content} bigger={true}>  </Item>
+            <Item icon={contact.icon} content={contact.content} bigger={true} >  </Item>
           </li>
         ))}
       </ul>
