@@ -1,18 +1,16 @@
-
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import {Container,Row,Col} from "react-bootstrap";
+import { NavigationBar, NavRoute } from './components/navbar';
 import Body from './components/body/Body'
 import Topbar from './components/topbar';
 function App() {
-  return (
-   <>
+   return (
+      <>
          {/* TOP NAVIGATION -PHI LONG */}
       <Topbar/>
      
         {/* BOT NAVIGATION -PHUONG ANH */}
-      <h1 className='text' >import no vao day nha anh </h1>
-     
+        <NavigationBar />
+        <NavRoute />
+        
       {/* Sidebar TRUNG  NGUYEN */}
        <Body></Body>
     </>  
