@@ -9,7 +9,7 @@ class NavigationBar extends Component {
       return (
          <div className="container-navbar">
             <Nav >
-               <div className="navbar">
+               <div className="navbar w-100">
                   <Container>
                      <Row className="navbar-item">
                         <Col xs={7} md={6} lg={5}>
