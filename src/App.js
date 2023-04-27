@@ -11,10 +11,10 @@ function App() {
       <Topbar/>
      
         {/* BOT NAVIGATION -PHUONG ANH */}
-      <h1 className='text'>import no vao day nha anh </h1>
+      <h1 className='text' >import no vao day nha anh </h1>
      
       {/* Sidebar TRUNG  NGUYEN */}
-      <Body></Body>
+       <Body></Body>
     </>  
 
   );
