@@ -17,7 +17,13 @@
    max-height: 95px;
    margin:  auto;
 }
-
+.nav-left{
+   display: flex;
+   gap:1.5rem;
+}
+.nav-right{
+   justify-content: right;
+}
 .nav .nav-link:hover{
    color: white;
 }

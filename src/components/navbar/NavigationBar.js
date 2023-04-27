@@ -9,10 +9,10 @@ class NavigationBar extends Component {
       return (
          <div className="container-navbar">
             <Nav >
-               <div className="navbar w-100">
+               <div className="navbar">
                   <Container>
-                     <Row className="navbar-item">
-                        <Col xs={7} md={6} lg={5}>
+                     <Row className="navbar-item  w-100">
+                        <Col xs={7} md={6} lg={5} className='nav-left'>
                            <Nav.Link href="/" className="home-item">
                               <span>Trang chủ</span>
                            </Nav.Link>
@@ -27,7 +27,7 @@ class NavigationBar extends Component {
                            </Nav.Link>
                         </Col>
 
-                        <Col xs={5} md={6} lg={7} className="nav-right d-flex justify-content">
+                        <Col xs={5} md={6} lg={7} className="nav-right d-flex ">
                            <Nav.Link href="#" className="mail-item">
                               <span>
                                  <AiOutlineMail />
