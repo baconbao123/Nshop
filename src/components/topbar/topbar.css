@@ -13,12 +13,12 @@
     background-color: #fff;
 }
     .topbar{
-        max-width: 1180px;
+        /* max-width: 1180px; */                                                                                    
         height: 52px;
         margin: auto;
     } 
 .logo{
-    text-align: right;
+    text-align: left;
 }
 .text-logo{
     font-size: 18px;
