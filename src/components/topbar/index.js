@@ -4,14 +4,17 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
+import { useState, useEffect } from 'react';
 
 import logo from '../../img/logo.jpg'
 import './topbar.css'
+//icon
 import { AiOutlineShoppingCart } from 'react-icons/ai'
 import { AiOutlineUser } from 'react-icons/ai'
 import { VscSearch } from 'react-icons/vsc'
 
 function Topbar() {
+
   return (
     <nav className='container-topbar'>
       <div className='topbar'>
