@@ -1,16 +1,17 @@
 import React from "react";
 import { Card } from "react-bootstrap";
 
-const ProductCard = (props) => {
-    const { data } = props
+const ProductCard = (products) => {
     return (
-        <Card>
-            <Card.Img variant="top" src="data.img"/>
-            <Card.Body>
-                <Card.Text>{data.content}</Card.Text>
-                <Card.Text>{data.price}</Card.Text>
-            </Card.Body>
-        </Card>
+        {products.map((product,index) => (
+            <Card>
+                <Card.Img variant={index} src={product.img}/>
+                <Card.Body>
+                    <Card.Text>{product.content}</Card.Text>
+                    <Card.Text>{product.price}</Card.Text>
+                </Card.Body>
+            </Card>
+        ))}
     )
 }
 
