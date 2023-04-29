@@ -325,7 +325,7 @@ const mayin = [
 const Content = () => {
 	return (
 		<>
-			<h4 className="title-list-product 1">Danh sách sản phẩm mới</h4>
+			<h4 className="title-list-product1">Danh sách sản phẩm mới</h4>
 			<Row className="card-product"><Card products={productNew} /></Row>
 
 			<h4 className="title-list-product">Danh sách sản phẩm nổi bật</h4>
