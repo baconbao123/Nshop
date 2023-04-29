@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import { useState, useEffect } from 'react';
-
+import Input from './Input';
 import logo from '../../img/logo.jpg'
 import './topbar.css'
 //icon
@@ -26,10 +26,7 @@ function Topbar() {
               <span className='text-logo'>NSHOP</span>
             </Col>
             <Col md={7}>
-              <InputGroup>
-                <InputGroup.Text className='input-icon-search'> <VscSearch /></InputGroup.Text>
-                <Form.Control placeholder='Tìm kiếm sản phẩm trên NSHOP...' type='search' className='input-search' />
-              </InputGroup>
+              <Input></Input>
 
             </Col>
             <Col md={3}>
