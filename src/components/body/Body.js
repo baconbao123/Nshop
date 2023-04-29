@@ -10,12 +10,18 @@ export default function Body() {
     <Container className='body'>
         <Row>
         <Col md={3}>
-          <Slidebar></Slidebar>
+          <div className='scroll-container'>
+            <div className='scroll-content'>
+            <Slidebar></Slidebar>
+            </div>
+          </div>
+        
         </Col>
         <Col md={9}>
           {/* Truogn trung nguyen */}
           
           <CarouselSlide/>
+          
           <Content />
         </Col>
         </Row>
