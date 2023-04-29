@@ -1,6 +1,7 @@
 import { NavigationBar, NavRoute } from './components/navbar';
 import Body from './components/body/Body'
 import Topbar from './components/topbar';
+import Footer from './components/footer/footer';
 function App() {
    return (
       <>
@@ -13,6 +14,7 @@ function App() {
         
       {/* Sidebar TRUNG  NGUYEN */}
        <Body></Body>
+       <Footer></Footer>
     </>  
 
   );
