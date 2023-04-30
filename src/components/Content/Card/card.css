@@ -2,11 +2,11 @@
     margin:  0;
     padding: 0;
 }
-.product a{
+.block-product a{
     text-decoration: none;
     color: #000;
 }
-.product a:hover{
+.block-product a:hover{
     color: #000;
 }
 .title-list-product1{
@@ -48,4 +48,14 @@
 .card-product{
    gap:2rem;
    
+}
+/*block-header <ProductList>*/
+.block-header{
+    display: flex;
+    justify-content: space-between;
+}
+.show99{
+    margin: 45px 0 16px 0;
+    text-decoration: none;
+    font-weight: 400;
 }

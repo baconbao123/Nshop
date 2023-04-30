@@ -1,8 +1,8 @@
 import React from 'react';
-import Card from './Card/ProductCard';
-import { Row } from 'react-bootstrap';
-import { Col } from 'react-bootstrap';
+
+
 import './Card/card.css';
+import ProductList from './ProductList';
 const productNew = [
 	{
 		img: 'https://nshopvn.com/wp-content/uploads/2023/04/den-canh-bao-xoay-vong-halogen-mau-do-12v-9wnn-1-300x300.jpg',
@@ -325,25 +325,63 @@ const mayin = [
 const Content = () => {
 	return (
 		<>
-			<h4 className="title-list-product 1">Danh sách sản phẩm mới</h4>
-			<Row className="card-product"><Card products={productNew} /></Row>
-
-			<h4 className="title-list-product">Danh sách sản phẩm nổi bật</h4>
-			<Row className="card-product"><Card products={productFeatured} /></Row>
-
-			<h4 className="title-list-product">Arduino</h4>
-			<Row className="card-product"><Card products={Arduino}/></Row>
-
-			<h4 className="title-list-product">Cảm biến</h4>
-			<Row className="card-product"><Card products={Cambien} /></Row>
-
-			<h4 className="title-list-product">Đồng hồ vạn năng</h4>
-			<Row className="card-product"><Card products={dongho} /></Row>
-
-			<h4 className="title-list-product">Cảm biến</h4>
-			<Row className="card-product"><Card products={mayin} /></Row>
+			<section className='block-product'>
+				<header className='block-header'>
+					<div className='title-modular'>
+						<h4 className="title-list-product1">Danh sách sản phẩm mới</h4>
+					</div>
+				</header>
+				<a href="#/product"><ProductList products={productNew} /></a>
+			</section>
+			<section className='block-product'>
+				<header className='block-header'>
+					<div className='title-modular'>
+						<h4 className="title-list-product">Sản phẩm nổi bật</h4>
+					</div>
+					<a href="#" className='show99'><span>Xem thêm(99+)</span></a>
+				</header>
+				<a href="#/product"><ProductList products={productFeatured} /></a>
+			</section>
+			<section className='block-product'>
+				<header className='block-header'>
+					<div className='title-modular'>
+						<h4 className="title-list-product">Arduino</h4>
+					</div>
+					<a href="#" className='show99'><span>Xem thêm(99+)</span></a>
+				</header>
+				<a href="#/product"><ProductList products={Arduino} /></a>
+			</section>
+			<section className='block-product'>
+				<header className='block-header'>
+					<div className='title-modular'>
+						<h4 className="title-list-product">Cảm biến</h4>
+					</div>
+					<a href="#" className='show99'><span>Xem thêm(99+)</span></a>
+				</header>
+				<a href="#/product"><ProductList products={Cambien} /></a>
+			</section>
+			<section className='block-product'>
+				<header className='block-header'>
+					<div className='title-modular'>
+						<h4 className="title-list-product">Đồng hồ</h4>
+					</div>
+					<a href="#" className='show99'><span>Xem thêm(99+)</span></a>
+				</header>
+				<a href="#/product"><ProductList products={dongho} /></a>
+			</section>
+			<section className='block-product'>
+				<header className='block-header'>
+					<div className='title-modular'>
+						<h4 className="title-list-product">Máy in</h4>
+					</div>
+					<a href="#" className='show99'><span>Xem thêm(99+)</span></a>
+				</header>
+				<a href="#/product"><ProductList products={mayin} /></a>
+			</section>
 		</>
 	);
 };
 
 export default Content;
+
+
