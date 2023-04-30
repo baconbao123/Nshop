@@ -1,9 +1,8 @@
 import React from 'react';
+import Card from './Card/ProductCard';
 import { Row } from 'react-bootstrap';
 import { Col } from 'react-bootstrap';
 import './Card/card.css';
-import ProductCard from './Card/ProductCard';
-
 const productNew = [
 	{
 		img: 'https://nshopvn.com/wp-content/uploads/2023/04/den-canh-bao-xoay-vong-halogen-mau-do-12v-9wnn-1-300x300.jpg',
@@ -324,15 +323,26 @@ const mayin = [
 ];
 
 const Content = () => {
-	const productList = [...productNew,...productFeatured,...Arduino,...Cambien,...dongho,...mayin]
 	return (
-		<ul>
-			{productList.map((product, index) => (
-				<li key={index}>
-					<ProductCard product={product} />
-				</li>
-			))}
-		</ul>
+		<>
+			<h4 className="title-list-product 1">Danh sách sản phẩm mới</h4>
+			<Row className="card-product"><Card products={productNew} /></Row>
+
+			<h4 className="title-list-product">Danh sách sản phẩm nổi bật</h4>
+			<Row className="card-product"><Card products={productFeatured} /></Row>
+
+			<h4 className="title-list-product">Arduino</h4>
+			<Row className="card-product"><Card products={Arduino} /></Row>
+
+			<h4 className="title-list-product">Cảm biến</h4>
+			<Row className="card-product"><Card products={Cambien} /></Row>
+
+			<h4 className="title-list-product">Đồng hồ vạn năng</h4>
+			<Row className="card-product"><Card products={dongho} /></Row>
+
+			<h4 className="title-list-product">Cảm biến</h4>
+			<Row className="card-product"><Card products={mayin} /></Row>
+		</>
 	);
 };
 

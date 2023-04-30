@@ -10,10 +10,13 @@
     color: #000;
 }
 .title-list-product1{
-    margin-top: 20px;
+    font-size: 1.25rem;
+    margin: 20px 0 20px 0;
 }
 .title-list-product{
-    margin-top: 35px;
+    font-size: 1.25rem;
+    margin: 45px 0 16px 0;
+
 }
 .card{
     font-size: .8rem;
