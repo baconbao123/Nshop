@@ -34,15 +34,15 @@
 }
 
 .input-icon-search{
-    border: none;
+    border: none !important;
     font-size: 16px;
     
 }
 .input-search{
     font-size: 16px;
-    background-color: #E9ECEF;
-    border-left: none;
-    border: none;
+    background-color: #E9ECEF !important;
+    border-left: none !important;
+    border: none !important;
     padding: 5px;
 }
 .site-heard-user{
