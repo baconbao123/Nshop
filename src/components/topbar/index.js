@@ -32,12 +32,12 @@ function Topbar() {
             <Col md={3}>
               <Row className='site-heard-user'>
                 <Col>
-                  <a href="#">
+                  <a href="/cart">
                     <span> <AiOutlineShoppingCart className='shopping-cart' /> Giỏ hàng</span>
                   </a>
                 </Col>
                 <Col>
-                  <a href="#">
+                  <a href="/user">
                     <span><AiOutlineUser className='user' /> Tài khoản</span>
                   </a>
                 </Col>

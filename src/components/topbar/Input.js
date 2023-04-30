@@ -41,7 +41,7 @@ export default function Input() {
     <>
     <InputGroup ref={InputRef}>
                 <InputGroup.Text className='input-icon-search'> <VscSearch /></InputGroup.Text>
-                <Form.Control placeholder='Tìm kiếm sản phẩm trên NSHOP...' type='search' className='input-search'  value={input} onChange={handleInput} onClick={handleClick}/>
+                <Form.Control placeholder='Tìm kiếm sản phẩm trên NSHOP...' type='search' className='input-search' value={input} onChange={handleInput} onClick={handleClick}/>
     </InputGroup>
     <Div className='Inputchild' input={input} ref={DivRef} show={show}>
       {input===''?( <p className='title'>Nhập tên hoặc từ khóa sản phẩm bạn cần tìm   </p>):( <p className='title-search'>{input}</p>)}
