@@ -332,7 +332,7 @@ const Content = () => {
 			<Row className="card-product"><Card products={productFeatured} /></Row>
 
 			<h4 className="title-list-product">Arduino</h4>
-			<Row className="card-product"><Card products={Arduino} /></Row>
+			<Row className="card-product"><Card products={Arduino}/></Row>
 
 			<h4 className="title-list-product">Cảm biến</h4>
 			<Row className="card-product"><Card products={Cambien} /></Row>
