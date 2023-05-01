@@ -12,9 +12,10 @@ import './topbar.css'
 import { AiOutlineShoppingCart } from 'react-icons/ai'
 import { AiOutlineUser } from 'react-icons/ai'
 import { VscSearch } from 'react-icons/vsc'
-
+// hiển thị thông báo
+import MyVerticallyCenteredModal from '../modals/Modal';
 function Topbar() {
-
+  const [showModal,setShowModal]=useState(false)
   return (
     <nav className='container-topbar'>
       <div className='topbar'>
@@ -32,12 +33,12 @@ function Topbar() {
             <Col md={3}>
               <Row className='site-heard-user'>
                 <Col>
-                  <a href="/cart">
+                  <a href="#" onClick={()=> setShowModal(true)}>
                     <span> <AiOutlineShoppingCart className='shopping-cart' /> Giỏ hàng</span>
                   </a>
                 </Col>
                 <Col>
-                  <a href="/user">
+                  <a href="/#" onClick={()=> setShowModal(true)}>
                     <span><AiOutlineUser className='user' /> Tài khoản</span>
                   </a>
                 </Col>
@@ -45,6 +46,11 @@ function Topbar() {
             </Col>
           </Row>
         </Container>
+        {/* hàm hiển thị thông báo */}
+        <MyVerticallyCenteredModal
+          show={showModal}
+          onHide={() => setShowModal(false)}
+        />
 
       </div>
     </nav>
