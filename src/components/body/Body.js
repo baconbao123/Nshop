@@ -4,7 +4,7 @@ import Slidebar from '../sildebar/Slidebar'
 import CarouselSlide from '../carousel/carousel'
 import './body.css'
 import Content from '../Content/Content'
-
+import Blog from '../Blog/Blog'
 export default function Body() {
   return (
     <Container className='body'>
@@ -18,11 +18,16 @@ export default function Body() {
         
         </Col>
         <Col md={9}>
-          {/* Truogn trung nguyen */}
           
+          {/* Phần trang chủ (home)*/}
           <CarouselSlide/>
-          
           <Content />
+          {/* Phần Product (sản phẩm) */}
+
+          {/* Phần blog */}
+          {/* <Blog></Blog> */}
+
+          {/* Phần hệ thống cửa hàng */}
         </Col>
         </Row>
     </Container>

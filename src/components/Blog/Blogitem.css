@@ -1,0 +1,12 @@
+.blog-list {
+}
+.card {
+    margin-bottom: 10px;
+    
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+.card-title {
+    font-weight: 600;
+    font-size: 1rem;
+}
