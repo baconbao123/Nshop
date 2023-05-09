@@ -1,11 +1,11 @@
 import './Css/style.css';
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import { Container, Row, Col, Nav, Dropdown } from 'react-bootstrap';
 import { AiOutlineMail, AiFillPhone } from 'react-icons/ai';
 import { MdSupportAgent } from 'react-icons/md';
 
-class NavigationBar extends Component {
-   render() {
+const NavigationBar = () => { 
       return (
          <div className="container-navbar">
             <Nav >
@@ -13,34 +13,34 @@ class NavigationBar extends Component {
                   <Container>
                      <Row className="navbar-item  w-100">
                         <Col xs={7} md={6} lg={5} className='nav-left'>
-                           <Nav.Link href="/" className="home-item">
+                           <Nav.Link as={Link} to="/" className="home-item" >
                               <span>Trang chủ</span>
                            </Nav.Link>
-                           <Nav.Link href="/productsall" className="product-item">
+                           <Nav.Link as={Link} to="/productsall" className="product-item">
                               <span>Sản phẩm</span>
                            </Nav.Link>
-                           <Nav.Link href="/blog" className="blog-item">
+                           <Nav.Link as={Link} to="/blog" className="blog-item">
                               <span>Blog</span>
                            </Nav.Link>
-                           <Nav.Link href="/store" className="store-item">
+                           <Nav.Link as={Link} to="/store" className="store-item">
                               <span>Hệ thống cửa hàng</span>
                            </Nav.Link>
                         </Col>
 
                         <Col xs={5} md={6} lg={7} className="nav-right d-flex ">
-                           <Nav.Link href="#" className="mail-item">
+                           <Nav.Link as={Link} to="#" className="mail-item">
                               <span>
                                  <AiOutlineMail />
                                  info@nshopvn.com
                               </span>
                            </Nav.Link>
-                           <Nav.Link href="#" className="add-item">
+                           <Nav.Link as={Link} to="#" className="add-item">
                               <span>
                                  <AiFillPhone />
                                  Tân Phú: 0902 643 978
                               </span>
                            </Nav.Link>
-                           <Nav.Link href="#" className="add-item">
+                           <Nav.Link as={Link} to="#" className="add-item">
                               <span>
                                  <AiFillPhone />
                                  Quận 9: 093 27 23 186
@@ -70,9 +70,6 @@ class NavigationBar extends Component {
             </Nav>
          </div>
       );
-   }
-}
-
-
+};
 
 export default NavigationBar;

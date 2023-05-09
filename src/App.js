@@ -1,21 +1,23 @@
-import { NavigationBar, NavRoute } from './components/navbar';
 import Body from './components/body/Body'
 import Topbar from './components/topbar';
 import Footer from './components/footer/footer';
+import NavigationBar from './components/navbar/NavigationBar';
+import { BrowserRouter as Router } from 'react-router-dom';
 function App() {
    return (
-      <>
-         {/* TOP NAVIGATION -PHI LONG */}
-      <Topbar/>
-     
-        {/* BOT NAVIGATION -PHUONG ANH */}
-        <NavigationBar />
-        <NavRoute />
-        
-      {/* Sidebar TRUNG  NGUYEN */}
-       <Body></Body>
-       <Footer></Footer>
-    </>  
+      <Router>
+            <>
+            {/* TOP NAVIGATION -PHI LONG */}
+            <Topbar/>
+         
+            {/* BOT NAVIGATION -PHUONG ANH */}
+            <NavigationBar />
+            
+            {/* Sidebar TRUNG  NGUYEN */}
+            <Body></Body>
+            <Footer></Footer>
+         </>  
+      </Router>
 
   );
 }

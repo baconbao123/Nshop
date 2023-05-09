@@ -1,6 +1,6 @@
 
 import Blogitem from "./Blogitem"
-export default function Blog() {
+export function Blog() {
     const blog= [
         {
         img:'https://nshopvn.com/wp-content/uploads/2022/03/7-300x150.png',
