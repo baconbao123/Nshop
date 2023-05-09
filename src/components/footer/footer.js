@@ -11,7 +11,7 @@ function footer() {
         <div className='footer'>
             <Container>
                 <Row className='w-100 content-footer'>
-                    <Col md={7} className='footer-left'>
+                    <Col md={6} className='footer-left'>
                         <ul className='ul-footer'>
                             <a href="#/guarantee"> <li>Bảo hành</li></a>
                             <a href="#/doitra"> <li>Đổi trả</li></a>
@@ -25,7 +25,7 @@ function footer() {
                             <b>NSHOPVN.COM © 2019 - 2021</b>
                         </div>
                     </Col>
-                    <Col md={5} className='text-center'>
+                    <Col md={6} className='text-center'>
                         <img src={proteced} width={135} />
                         <img src={dathongbao} width={180} />
 
