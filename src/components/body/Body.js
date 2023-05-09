@@ -6,7 +6,7 @@ import Content from '../Content/Content';
 import { Blog as BlogContent } from '../Blog/Blog';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './body.css';
-
+import Products from '../ProductAll/Products';
 const Home = () => {
    return (
       <>
@@ -21,7 +21,7 @@ const ProductsAll = () => {
    return (
       <>
          {/* Phần Product (sản phẩm) */}
-         <h1>Tất cả sản phẩm</h1>
+         <Products/>
       </>
    );
 };
