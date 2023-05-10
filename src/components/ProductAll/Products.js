@@ -226,7 +226,7 @@ function Products() {
 
   return (
     <>
-      <Link />
+      <Link titleNav={'Sản phẩm'} />
       <h1 className='page-title'>Sản Phẩm</h1>
       <FilterBar />
       <ProductList products={currentItems} />
