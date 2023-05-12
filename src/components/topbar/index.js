@@ -38,7 +38,7 @@ function Topbar() {
             </Col>
             <Col lg={3} md={4}>
               <Row className='site-heard-user'>
-                <Col className='cart'>
+                <Col>
                   <a href="#" onClick={()=> setShowModal(true)}>
                     <span> <AiOutlineShoppingCart className='shopping-cart' /> Giỏ hàng</span>
                   </a>
