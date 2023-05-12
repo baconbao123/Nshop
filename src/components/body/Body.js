@@ -46,16 +46,16 @@ const Address = () => {
 
 export default function Body() {
    return (
-      <Container className="body">
+      <Container className="body container-lg container-fluid">
          <Row>
-            <Col md={3}>
+            <Col lg={3} className='d-md-none d-lg-block'>
                <div className="scroll-container">
                   <div className="scroll-content">
                      <Slidebar></Slidebar>
                   </div>
                </div>
             </Col>
-            <Col md={9}>
+            <Col lg={9} md={12}>
                   <Routes>
                      <Route path="/" element={<Home />} />
                      <Route path="/productsall" element={<ProductsAll />} />

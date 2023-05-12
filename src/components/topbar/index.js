@@ -21,16 +21,16 @@ function Topbar() {
       <div className='topbar'>
         <Container>
           <Row className='w-100' >
-            <Col md={2} className='logo'>
+            <Col lg={2} md={3} className='logo'>
               <img src={logo} width={40} />
               
               <span className='text-logo'>NSHOP</span>
             </Col>
-            <Col md={7}>
+            <Col lg={7} md={4}>
               <Input></Input>
 
             </Col>
-            <Col md={3}>
+            <Col lg={3} md={5}>
               <Row className='site-heard-user'>
                 <Col>
                   <a href="#" onClick={()=> setShowModal(true)}>

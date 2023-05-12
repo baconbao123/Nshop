@@ -10,7 +10,7 @@ function footer() {
     return (
         <div className='footer'>
             <Container>
-                <Row className='w-100 content-footer'>
+                <Row className='w-100 content-footer '>
                     <Col md={7} className='footer-left'>
                         <ul className='ul-footer'>
                             <a href="#/guarantee"> <li>Bảo hành</li></a>
@@ -29,6 +29,9 @@ function footer() {
                         <img src={proteced} width={135} />
                         <img src={dathongbao} width={180} />
 
+                    </Col>
+                    <Col xs={8} className='d-block d-sm-none'>
+                        <button>Nshop.com</button>
                     </Col>
                 </Row>
             </Container>

@@ -9,7 +9,7 @@ const ProductList = ({ products }) => {
         <div className='product-list'>
             <Row className="card-product">
                 {products.map((product,index) => (
-                    <Col md={2} key={index}>
+                    <Col lg={2} key={index}>
                         <Card  product={product} />
                     </Col>
                 ))}

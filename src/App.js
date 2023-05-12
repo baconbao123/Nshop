@@ -11,7 +11,9 @@ function App() {
             <Topbar/>
          
             {/* BOT NAVIGATION -PHUONG ANH */}
-            <NavigationBar />
+            <div className='d-md-none d-lg-block'>
+               <NavigationBar />
+            </div>
             
             {/* Sidebar TRUNG  NGUYEN */}
             <Body></Body>

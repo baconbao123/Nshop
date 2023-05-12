@@ -21,7 +21,7 @@ const ProductCard = ({ product }) => {
 
   return (
     <>
-      <Card style={{ width: '137%' }} className="card">
+      <Card className="card">
       {isSoldOut && <SoldOutSpan>Hết hàng</SoldOutSpan>}
         <Card.Img src={product.img} />
         <Card.Body>
