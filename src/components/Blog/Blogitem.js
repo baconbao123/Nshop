@@ -20,7 +20,7 @@ const handleLen=(text,max)=>{
             {blog.map((blog,index)=>(
                 
              <Col md="4" key={index}>
-             <Card style={{height:'400px'}} className='card'>
+             <Card style={{height:'400px'}} className='card-item'>
                  <Card.Img src={blog.img} />
                  <Card.Body>
                      <Card.Text className='card-title'>{handleLen(blog.title,100)} </Card.Text>

@@ -1,10 +1,10 @@
 import React from 'react'
 import './link.css'
-function Link() {
+function Link({titleNav}) {
   return (
     <div className='link' style={{marginBottom:'14px'}}>
        <a href="/" className='link-active'>NShop</a>
-       <span > Sản phẩm</span>
+       <span >{titleNav}</span>
     </div>
   )
 }

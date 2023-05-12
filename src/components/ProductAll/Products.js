@@ -6,10 +6,10 @@ import './products.css'
 import Link from '../Link/Link';
 import FilterBar from './FilterBar';
 import Form from 'react-bootstrap/Form';
-
+import PageSelect from './PageSelect';
 //icon
 import { AiOutlineRightCircle } from 'react-icons/ai'
-
+import { AiOutlineLeftCircle } from 'react-icons/ai'
 const products = [
   {
     img: 'https://nshopvn.com/wp-content/uploads/2022/12/khop-cau-canh-tay-don-may-in-3d-kclx-vxbn-2-300x300.jpg',
@@ -211,40 +211,193 @@ const products = [
     content: 'Đồng hồ điện tử VICTOR VC830L',
     price: '289.000₫',
   },
+  {
+    img: 'https://nshopvn.com/wp-content/uploads/2022/12/truc-nhom-cho-banh-xe-v-slot-5x10x6mm-2jh6-1-300x300.jpg',
+    content: 'Trục nhôm cho bánh xe V-Slot 5x10x6mm',
+    price: '2.000',
+  },
+  {
+    img: 'https://nshopvn.com/wp-content/uploads/2021/05/dong-ho-dien-tu-aneng-a830l-atri-2-1-300x300.jpg',
+    content: 'Đồng hồ điện tử ANENG A830L',
+    price: '129.000₫',
+  },
+  {
+    img: 'https://nshopvn.com/wp-content/uploads/2021/03/nhip-tham-do-kiem-tra-lcr-va-thanh-phan-chip-smd-28vc-5-300x300.jpg',
+    content: 'Nhíp thăm dò kiểm tra LCR và thành phần chip SMD',
+    price: '41.000₫',
+  },
+  {
+    img: 'https://nshopvn.com/wp-content/uploads/2021/01/dong-ho-ampe-kim-tu-dong-winapex-8203-5wq6-2-300x300.jpg',
+    content: 'Đồng hồ ampe kìm tự động WinAPEX 8203',
+    price: '851.000₫',
+  },
+  {
+    img: 'https://nshopvn.com/wp-content/uploads/2020/05/dong-ho-ampe-kim-tu-dong-winapex-8202-kp9j-S1-300x300.jpg',
+    content: 'Đồng hồ ampe kìm tự động WinAPEX 8202',
+    price: '592.000₫',
+  },
+  {
+    img: 'https://nshopvn.com/wp-content/uploads/2020/04/dong-ho-ampe-kim-tu-dong-winapex-8201-XBGV-2020-0-300x300.jpg',
+    content: 'Đồng hồ ampe kìm tự động WinAPEX 8201',
+    price: '610.000₫',
+  },
+  {
+    img: 'https://nshopvn.com/wp-content/uploads/2019/11/dong-ho-dien-tu-tu-dong-yiyoubao-et8133-QNZU-2020-300x300.jpg',
+    content: 'Đồng hồ điện tử tự động YIYOUBAO ET8133',
+    price: '353.000₫',
+  },
+  {
+    img: 'https://nshopvn.com/wp-content/uploads/2019/03/dong-ho-dien-tu-winapex-et8103-auto-O75E-2020-300x300.jpg',
+    content: 'Đồng hồ điện tử WinAPEX ET8103 Auto',
+    price: '496.000₫',
+  },
+  {
+    img: 'https://nshopvn.com/wp-content/uploads/2019/03/dong-ho-dien-tu-winapex-et8101-V9F2-2020-300x300.jpg',
+    content: 'Đồng hồ điện tử WinAPEX ET8101',
+    price: '382.000₫',
+  },
+  {
+    img: 'https://nshopvn.com/wp-content/uploads/2019/03/Dong-ho-dien-tu-WinAPEX-ET8102-L7NA-3-300x300.jpg',
+    content: 'Đồng hồ điện tử WinAPEX ET8102',
+    price: '447.000₫',
+  },
+  {
+    img: 'https://nshopvn.com/wp-content/uploads/2019/03/dong-ho-dien-tu-victor-vc830l-lyl8-5-300x300.jpg',
+    content: 'Đồng hồ điện tử VICTOR VC830L',
+    price: '289.000₫',
+  },
+  {
+    img: 'https://nshopvn.com/wp-content/uploads/2021/05/dong-ho-dien-tu-aneng-a830l-atri-2-1-300x300.jpg',
+    content: 'Đồng hồ điện tử ANENG A830L',
+    price: '129.000₫',
+  },
+  {
+    img: 'https://nshopvn.com/wp-content/uploads/2021/03/nhip-tham-do-kiem-tra-lcr-va-thanh-phan-chip-smd-28vc-5-300x300.jpg',
+    content: 'Nhíp thăm dò kiểm tra LCR và thành phần chip SMD',
+    price: '41.000₫',
+  },
+  {
+    img: 'https://nshopvn.com/wp-content/uploads/2021/01/dong-ho-ampe-kim-tu-dong-winapex-8203-5wq6-2-300x300.jpg',
+    content: 'Đồng hồ ampe kìm tự động WinAPEX 8203',
+    price: '851.000₫',
+  },
+  {
+    img: 'https://nshopvn.com/wp-content/uploads/2020/05/dong-ho-ampe-kim-tu-dong-winapex-8202-kp9j-S1-300x300.jpg',
+    content: 'Đồng hồ ampe kìm tự động WinAPEX 8202',
+    price: '592.000₫',
+  },
+  {
+    img: 'https://nshopvn.com/wp-content/uploads/2020/04/dong-ho-ampe-kim-tu-dong-winapex-8201-XBGV-2020-0-300x300.jpg',
+    content: 'Đồng hồ ampe kìm tự động WinAPEX 8201',
+    price: '610.000₫',
+  },
+  {
+    img: 'https://nshopvn.com/wp-content/uploads/2019/11/dong-ho-dien-tu-tu-dong-yiyoubao-et8133-QNZU-2020-300x300.jpg',
+    content: 'Đồng hồ điện tử tự động YIYOUBAO ET8133',
+    price: '353.000₫',
+  },
+  {
+    img: 'https://nshopvn.com/wp-content/uploads/2019/03/dong-ho-dien-tu-winapex-et8103-auto-O75E-2020-300x300.jpg',
+    content: 'Đồng hồ điện tử WinAPEX ET8103 Auto',
+    price: '496.000₫',
+  },
+  {
+    img: 'https://nshopvn.com/wp-content/uploads/2019/03/dong-ho-dien-tu-winapex-et8101-V9F2-2020-300x300.jpg',
+    content: 'Đồng hồ điện tử WinAPEX ET8101',
+    price: '382.000₫',
+  },
+  {
+    img: 'https://nshopvn.com/wp-content/uploads/2019/03/Dong-ho-dien-tu-WinAPEX-ET8102-L7NA-3-300x300.jpg',
+    content: 'Đồng hồ điện tử WinAPEX ET8102',
+    price: '447.000₫',
+  },
+  {
+    img: 'https://nshopvn.com/wp-content/uploads/2019/03/dong-ho-dien-tu-victor-vc830l-lyl8-5-300x300.jpg',
+    content: 'Đồng hồ điện tử VICTOR VC830L',
+    price: '289.000₫',
+  },
+  {
+    img: 'https://nshopvn.com/wp-content/uploads/2021/05/dong-ho-dien-tu-aneng-a830l-atri-2-1-300x300.jpg',
+    content: 'Đồng hồ điện tử ANENG A830L',
+    price: '129.000₫',
+  },
+  {
+    img: 'https://nshopvn.com/wp-content/uploads/2021/03/nhip-tham-do-kiem-tra-lcr-va-thanh-phan-chip-smd-28vc-5-300x300.jpg',
+    content: 'Nhíp thăm dò kiểm tra LCR và thành phần chip SMD',
+    price: '41.000₫',
+  },
+  {
+    img: 'https://nshopvn.com/wp-content/uploads/2021/01/dong-ho-ampe-kim-tu-dong-winapex-8203-5wq6-2-300x300.jpg',
+    content: 'Đồng hồ ampe kìm tự động WinAPEX 8203',
+    price: '851.000₫',
+  },
+  {
+    img: 'https://nshopvn.com/wp-content/uploads/2020/05/dong-ho-ampe-kim-tu-dong-winapex-8202-kp9j-S1-300x300.jpg',
+    content: 'Đồng hồ ampe kìm tự động WinAPEX 8202',
+    price: '592.000₫',
+  },
+  {
+    img: 'https://nshopvn.com/wp-content/uploads/2020/04/dong-ho-ampe-kim-tu-dong-winapex-8201-XBGV-2020-0-300x300.jpg',
+    content: 'Đồng hồ ampe kìm tự động WinAPEX 8201',
+    price: '610.000₫',
+  },
+  {
+    img: 'https://nshopvn.com/wp-content/uploads/2019/11/dong-ho-dien-tu-tu-dong-yiyoubao-et8133-QNZU-2020-300x300.jpg',
+    content: 'Đồng hồ điện tử tự động YIYOUBAO ET8133',
+    price: '353.000₫',
+  },
+  {
+    img: 'https://nshopvn.com/wp-content/uploads/2019/03/dong-ho-dien-tu-winapex-et8103-auto-O75E-2020-300x300.jpg',
+    content: 'Đồng hồ điện tử WinAPEX ET8103 Auto',
+    price: '496.000₫',
+  },
+  {
+    img: 'https://nshopvn.com/wp-content/uploads/2019/03/dong-ho-dien-tu-winapex-et8101-V9F2-2020-300x300.jpg',
+    content: 'Đồng hồ điện tử WinAPEX ET8101',
+    price: '382.000₫',
+  },
+  {
+    img: 'https://nshopvn.com/wp-content/uploads/2019/03/Dong-ho-dien-tu-WinAPEX-ET8102-L7NA-3-300x300.jpg',
+    content: 'Đồng hồ điện tử WinAPEX ET8102',
+    price: '447.000₫',
+  },
+  {
+    img: 'https://nshopvn.com/wp-content/uploads/2019/03/dong-ho-dien-tu-victor-vc830l-lyl8-5-300x300.jpg',
+    content: 'Đồng hồ điện tử VICTOR VC830L',
+    price: '289.000₫',
+  },
 ];
 
 function Products() {
-  // const [products, setProducts] = useState([]); // product list
-  const [currentPage, setCurrentPage] = useState(1); // page now
+  const [currentPage, setCurrentPage] = useState(1); // current page
+  const itemsPerPage = 30; // number of products displayed per page
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentItems = products.slice(indexOfFirstItem, indexOfLastItem);
 
-  const itemsPage = 30; // so luong san pham hien thi tren 1 trang
-  const indexOfLastItem = currentPage * itemsPage;
-  const indexOfFistItem = indexOfLastItem - itemsPage;
-  const currentItems = products.slice(indexOfFistItem, indexOfLastItem);
-
-
+  const totalPages = Math.ceil(products.length / itemsPerPage);
 
   return (
     <>
-      <Link />
+      <Link titleNav={'Sản phẩm'} />
       <h1 className='page-title'>Sản Phẩm</h1>
       <FilterBar />
       <ProductList products={currentItems} />
       <div className='pagination'>
-        <Form.Select aria-label="Default select example" className='input-page'>
-          <option >1/5</option>
-          <option value="1">Trang 1</option>
-          <option value="2">Trang 2</option>
-          <option value="3">Trang 3</option>
-          <option value="3">Trang 4</option>
-        </Form.Select>
-        <button onClick={() => setCurrentPage(currentPage + 1)} className='btn btn-see-more'>XEM THÊM <AiOutlineRightCircle /></button>
+
+        <PageSelect
+          currentPage={currentPage}
+          totalPages={totalPages}
+          onChange={setCurrentPage}
+        />
+        {currentPage > 1 && ( // show back button if not on first page
+          <button onClick={() => setCurrentPage(currentPage - 1)} className='btn btn-back'><AiOutlineLeftCircle />TRANG TRƯỚC</button>
+        )}
+        {indexOfLastItem < products.length && ( // show "see more" button if not on last page
+          <button onClick={() => setCurrentPage(currentPage + 1)} className='btn btn-see-more'>XEM THÊM <AiOutlineRightCircle /></button>
+        )}
       </div>
-
     </>
-
   )
 }
-
 export default Products
-
