@@ -30,9 +30,6 @@ function footer() {
                         <img src={dathongbao} width={180} />
 
                     </Col>
-                    <Col xs={8} className='d-block d-sm-none'>
-                        <button>Nshop.com</button>
-                    </Col>
                 </Row>
             </Container>
 

@@ -9,8 +9,8 @@ import Input from './Input';
 import logo from '../../img/logo.jpg'
 import './topbar.css'
 //icon
-import { AiOutlineShoppingCart } from 'react-icons/ai'
-import { AiOutlineUser } from 'react-icons/ai'
+import { AiOutlineShoppingCart, AiOutlineUser } from 'react-icons/ai'
+import { MdOutlineApps } from "react-icons/md";
 import { VscSearch } from 'react-icons/vsc'
 // hiển thị thông báo
 import MyVerticallyCenteredModal from '../modals/Modal';
@@ -21,18 +21,24 @@ function Topbar() {
       <div className='topbar'>
         <Container>
           <Row className='w-100' >
-            <Col lg={2} md={3} className='logo'>
+            <Col lg={2} className='logo d-none d-lg-block'>
               <img src={logo} width={40} />
-              
               <span className='text-logo'>NSHOP</span>
             </Col>
-            <Col lg={7} md={4}>
+
+            <Col md={1} className='d-lg-none d-md-block'>
+              <button>
+                <span><MdOutlineApps className="icon-act" /> </span>
+              </button>
+            </Col>
+
+            <Col lg={7} md={7}>
               <Input></Input>
 
             </Col>
-            <Col lg={3} md={5}>
+            <Col lg={3} md={4}>
               <Row className='site-heard-user'>
-                <Col>
+                <Col className='cart'>
                   <a href="#" onClick={()=> setShowModal(true)}>
                     <span> <AiOutlineShoppingCart className='shopping-cart' /> Giỏ hàng</span>
                   </a>
