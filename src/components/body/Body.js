@@ -5,6 +5,7 @@ import CarouselSlide from '../carousel/carousel';
 import Content from '../Content/Content';
 import { Blog as BlogContent } from '../Blog/Blog';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import System from '~/System/System';
 import './body.css';
 import Products from '../ProductAll/Products';
 const Home = () => {
@@ -39,7 +40,7 @@ const Address = () => {
    return (
       <>
          {/* Phần hệ thống cửa hàng */}
-         <h1>Hệ thống cửa hàng</h1>
+        <System/>
       </>
    );
 };
