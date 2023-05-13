@@ -19,8 +19,8 @@ const handleLen=(text,max)=>{
         <Row className='blog-list'>
             {blog.map((blog,index)=>(
                 
-             <Col md="4" key={index}>
-             <Card style={{height:'400px'}} className='card-item'>
+             <Col lg="4" key={index}>
+             <Card style={{height:'400px'}} className='card-blog'>
                  <Card.Img src={blog.img} />
                  <Card.Body>
                      <Card.Text className='card-title'>{handleLen(blog.title,100)} </Card.Text>

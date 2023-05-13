@@ -21,7 +21,7 @@ const ProductCard = ({ product }) => {
 
   return (
     <>
-      <Card className="card">
+      <Card className="card card-item">
       {isSoldOut && <SoldOutSpan>Hết hàng</SoldOutSpan>}
         <Card.Img src={product.img} />
         <Card.Body>

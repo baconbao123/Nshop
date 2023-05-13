@@ -1,5 +1,7 @@
 
 import Blogitem from "./Blogitem"
+import Link from "../Link/Link"
+import PageTitle from "~/Title/PageTitle"
 export function Blog() {
     const blog= [
         {
@@ -63,8 +65,8 @@ export function Blog() {
 
      return  (
         <>
-
-        <h1>Blog</h1>
+      <Link titleNav='Blog'></Link>
+        <PageTitle title="Blog"></PageTitle>
         <Blogitem blog={blog}></Blogitem>
         </>
      )

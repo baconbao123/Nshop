@@ -7,6 +7,7 @@ import Link from '../Link/Link';
 import FilterBar from './FilterBar';
 import Form from 'react-bootstrap/Form';
 import PageSelect from './PageSelect';
+import PageTitle from '~/Title/PageTitle';
 //icon
 import { AiOutlineRightCircle } from 'react-icons/ai'
 import { AiOutlineLeftCircle } from 'react-icons/ai'
@@ -380,7 +381,7 @@ function Products() {
   return (
     <>
       <Link titleNav={'Sản phẩm'} />
-      <h1 className='page-title'>Sản Phẩm</h1>
+      <PageTitle title="Sản phẩm"></PageTitle>
       <FilterBar />
       <ProductList products={currentItems} />
       <div className='pagination'>
