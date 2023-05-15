@@ -1,0 +1,26 @@
+/* NavBar md*/
+.nav-md{
+    min-width: 100vw;
+    text-align: center;
+    background-color: #FFFFFF;
+    border-top: 1px solid #F0F2F5 ;
+    
+    position: fixed;
+    bottom:0;
+    z-index: 99;
+}
+.nav-link-md{
+display: flex;
+flex-direction: column;
+
+}
+.nav-link-md a{
+text-decoration: none;
+color: #000;
+font-size: .8rem;
+font-weight: 400;
+
+}
+.icon-nav-md{
+font-size: 1.3rem;
+}
