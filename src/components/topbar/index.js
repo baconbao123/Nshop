@@ -1,5 +1,5 @@
 import React from 'react'
-import Container from 'react-bootstrap/Container';  
+import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
@@ -15,7 +15,7 @@ import { VscSearch } from 'react-icons/vsc'
 // hiển thị thông báo
 import MyVerticallyCenteredModal from '../modals/Modal';
 function Topbar() {
-  const [showModal,setShowModal]=useState(false)
+  const [showModal, setShowModal] = useState(false)
   return (
     <nav className='container-topbar'>
       <div className='topbar'>
@@ -39,12 +39,12 @@ function Topbar() {
             <Col lg={3} md={4}>
               <Row className='site-heard-user'>
                 <Col>
-                  <a href="#" onClick={()=> setShowModal(true)}>
-                    <span> <AiOutlineShoppingCart className='shopping-cart' /> Giỏ hàng</span>
+                  <a href="#" onClick={() => setShowModal(true)}>
+                    <span className='shopping-cart-bage' data-count="4"> <AiOutlineShoppingCart className='shopping-cart' /> Giỏ hàng</span>
                   </a>
                 </Col>
                 <Col>
-                  <a href="/#" onClick={()=> setShowModal(true)}>
+                  <a href="/#" onClick={() => setShowModal(true)}>
                     <span><AiOutlineUser className='user' /> Tài khoản</span>
                   </a>
                 </Col>

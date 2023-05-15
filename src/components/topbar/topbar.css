@@ -59,6 +59,27 @@
 }
 .shopping-cart{
     font-size: 25px;
+
+}  
+.shopping-cart-bage{
+    position: relative;
+}
+/* btn hiển thị số lượng sản phẩm đã thêm vào giỏ hàng*/
+.shopping-cart-bage::after{
+    content: attr(data-count);
+    
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top:-5px;
+    left: 14px;
+    border-radius:50%;
+    background-color:#4682B4 ;
+
+    display: flex;
+    justify-content: center;
+    font-size: .5rem;
+    color: #fff;
 }
 .user{
     font-size: 25px;
