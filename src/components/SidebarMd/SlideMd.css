@@ -1,0 +1,27 @@
+.slideMd {
+    margin-top: -15px!important;
+
+    background-color:rgba(180, 180, 180,0.4);
+    z-index: 2;
+    height: 100vh;
+    position: fixed;
+  
+}
+.slideMd-content {
+    height:inherit;
+    position:fixed;
+    
+    z-index: 2;
+    background-color: #fff;
+    
+}
+.slideMd-title {
+    
+     margin: 10px 0px 20px 0px;
+     border-bottom: 1px solid rgba(180, 180, 180,0.4);
+
+}
+.slieMd-container {
+    
+
+}
