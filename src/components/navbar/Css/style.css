@@ -4,7 +4,6 @@
 }
 
 .container-navbar {
-   width: 100%;
    background-color: #003463;
    max-height: 95px;
    margin-top: 10px;
@@ -15,13 +14,14 @@
 .navbar {
    width: 1320px;
    max-height: 95px;
-   margin:  auto;
+   margin:  auto; 
 }
 .nav-left{
    display: flex;
    gap:1.5rem;
 }
 .nav-right{
+   display: flex;
    justify-content: right;
 }
 .nav .nav-link:hover{
@@ -39,9 +39,9 @@
    color: white;
    text-decoration: none;
    font-weight: 600;
-   font-size: 14px;
-   margin-top: 40px;
-   padding: 6px;
+   font-size: .875rem;
+   margin-top: 36px;
+   padding: 1px;
    padding-top: 8px;
    display: inline-block;
    gap: 2rem
@@ -53,24 +53,27 @@
 .nav .dropdown .btn {
    text-decoration: none;
    color: rgb(255, 255, 255);
-   font-size: 14px;
+   font-size: .875rem;
    text-align: right;
    flex-shrink: 0;
    margin-left: 20px;
    margin-top: 35px;
+   padding: 1px;
    padding-top: 10px;
    display: inline-block;
 }
 
 .nav .dropdown .btn {
    font-size: 0.9rem;
-   padding: 0.35rem 0.75rem;
+   padding: 0.35rem .95rem;
    background-color: #012644;
    border: #012644;
    border-radius: 0;
-   margin-top: 38px;
+   margin-top: 41px;
 }
-
+.nav .dropdown .btn :hover{
+   background-color:#003463 ;
+}
 .nav .dropdown .sale-item {
    color: black;
 }
@@ -79,8 +82,12 @@
    color: black;
    margin-left: 10px;
    font-size: 15px;
+   
 }
 
 .nav .dropdown .icon {
    color: rgb(118, 204, 235);
+}
+.dropdown-nav-contact{
+ 
 }

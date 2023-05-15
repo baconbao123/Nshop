@@ -4,15 +4,16 @@ import { Link } from 'react-router-dom';
 import { Container, Row, Col, Nav, Dropdown } from 'react-bootstrap';
 import { AiOutlineMail, AiFillPhone } from 'react-icons/ai';
 import { MdSupportAgent } from 'react-icons/md';
+import {BsChevronDown} from 'react-icons/bs'
 
 const NavigationBar = () => { 
       return (
-         <div className="container-navbar">
+         <div className="container-navbar w-100">
             <Nav >
                <div className="navbar">
                   <Container>
                      <Row className="navbar-item  w-100">
-                        <Col xs={7} md={6} lg={5} className='nav-left'>
+                        <Col  lg={5} className='nav-left'>
                            <Nav.Link as={Link} to="/" className="home-item" >
                               <span>Trang chủ</span>
                            </Nav.Link>
@@ -27,7 +28,7 @@ const NavigationBar = () => {
                            </Nav.Link>
                         </Col>
 
-                        <Col xs={5} md={6} lg={7} className="nav-right d-flex ">
+                        <Col lg={7} className="nav-right ">
                            <Nav.Link as={Link} to="#" className="mail-item">
                               <span>
                                  <AiOutlineMail />
@@ -46,8 +47,8 @@ const NavigationBar = () => {
                                  Quận 9: 093 27 23 186
                               </span>
                            </Nav.Link>
-                           <Dropdown className="dropdown">
-                              <Dropdown.Toggle variant="primary">Liên hệ</Dropdown.Toggle>
+                           <Dropdown className="dropdown ">
+                              <Dropdown.Toggle className='dropdown-nav-contact'>LIÊN HỆ <BsChevronDown/></Dropdown.Toggle>
                               <Dropdown.Menu>
                                  <Dropdown.Item className='sale-item' disabled>
                                     Bán hàng</Dropdown.Item>
