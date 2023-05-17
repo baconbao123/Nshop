@@ -16,12 +16,14 @@ import { VscSearch } from 'react-icons/vsc'
 import MyVerticallyCenteredModal from '../modals/Modal';
 function Topbar() {
   const [showModal, setShowModal] = useState(false)
+
+ 
   return (
     <nav className='container-topbar'>
       <div className='topbar'>
         <Container>
           <Row className='w-100' >
-            <Col lg={2} className='logo d-none d-lg-block'>
+            <Col lg={2} className='logo d-none d-lg-block' >
               <img src={logo} width={40} />
               <span className='text-logo'>NSHOP</span>
             </Col>

@@ -11,6 +11,7 @@ import Products from '../ProductAll/Products';
 import BottomNav from '../BottomNav/BottomNav';
 import Footer from '../footer/footer';
 import Category from '../Category/Category';
+import SlideMd from '../SidebarMd/SlideMd';
 const Home = () => {
    return (
       <>
@@ -68,7 +69,9 @@ export default function Body() {
                   </div>
                </div>
             </Col>
-            <Col lg={9} md={12} className='body-content'>
+            {/* <Col lg={9} md={12} className='body-content'> */}
+            <SlideMd></SlideMd>
+            <Col lg={9} md={12}>
                   <Routes>
                      <Route path="/" element={<Home />} />
                      <Route path="/productsall" element={<ProductsAll />} />
