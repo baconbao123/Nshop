@@ -17,7 +17,7 @@ function App() {
             
             {/* Sidebar TRUNG  NGUYEN */}
             <Body></Body>
-            <Footer></Footer>
+
          </>  
       </Router>
 
