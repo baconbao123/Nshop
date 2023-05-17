@@ -13,7 +13,7 @@ import BottomNav from '../BottomNav/BottomNav';
 function footer() {
     return (
         <div className='footer'>
-            <Container >
+            <Container className="body container-lg container-fluid" >
                 <Row className='w-100 content-footer d-lg-flex'>
                     <Col lg={6} md={7} className='footer-left'>
                         <ul className='ul-footer'>
@@ -39,7 +39,7 @@ function footer() {
 
             </Container>
             {/* NavBar responsive md */}
-            <BottomNav/>
+            
 
 
         </div>

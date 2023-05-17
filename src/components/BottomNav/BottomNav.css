@@ -9,7 +9,7 @@
     bottom:0;
     z-index: 99;
 }
-.nav-link-md{
+.nav-link-md a{
 display: flex;
 flex-direction: column;
 
