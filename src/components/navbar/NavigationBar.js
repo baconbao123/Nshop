@@ -28,7 +28,7 @@ const NavigationBar = () => {
                            </Nav.Link>
                         </Col>
 
-                        <Col lg={6} className="nav-right ">
+                        <Col lg={7} className="nav-right ">
                            <Nav.Link as={Link} to="#" className="mail-item">
                               <span>
                                  <AiOutlineMail />

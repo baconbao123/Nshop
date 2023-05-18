@@ -1,24 +1,34 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
-import { useState, useEffect } from 'react';
+import { useState,createContext} from 'react';
 import Input from './Input';
 import logo from '../../img/logo.jpg'
 import './topbar.css'
+
 //icon
 import { AiOutlineShoppingCart, AiOutlineUser } from 'react-icons/ai'
 import { MdOutlineApps } from "react-icons/md";
 import { VscSearch } from 'react-icons/vsc'
 // hiển thị thông báo
 import MyVerticallyCenteredModal from '../modals/Modal';
-function Topbar() {
-  const [showModal, setShowModal] = useState(false)
+import SlideMd from '../SidebarMd/SlideMd';
+
+
+
+
 
  
+function Topbar() {
+  const [showModal, setShowModal] = useState(false)
+  const showButtonSlide=useRef(null)
+  // console.log(showButtonSlide.current);
   return (
+    <>
+
     <nav className='container-topbar'>
       <div className='topbar'>
         <Container>
@@ -28,7 +38,7 @@ function Topbar() {
               <span className='text-logo'>NSHOP</span>
             </Col>
 
-            <Col md={1} className='d-lg-none d-md-block'>
+            <Col md={1} className='d-lg-none d-md-block' ref={showButtonSlide}>
               <button>
                 <span><MdOutlineApps className="icon-act" /> </span>
               </button>
@@ -62,6 +72,12 @@ function Topbar() {
 
       </div>
     </nav>
+    <Row> 
+    <SlideMd showButtonSlide={showButtonSlide}/>
+
+    </Row>
+
+    </>
   )
 }
 

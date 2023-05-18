@@ -23,9 +23,11 @@ import '../sildebar/sildebar.css'
 
 
 export default function Slidebar() {
+  
   const [items, setItems] = useState([]);
   const [contacts, setContacts] = useState([]);
   const [eles,setElses]=useState([]);
+  
   useEffect(() => {
 
     setItems([{ add:'true',icon: ardyino, content: "Arduino",child:['Aruino Shield','Board Arduino','Phụ kiện Arduino']},
