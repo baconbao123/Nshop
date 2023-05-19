@@ -5,7 +5,8 @@ import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import { useState,createContext} from 'react';
-import Input from './Input';
+import Input from './Input'
+import InputMd from './InputMd';
 import logo from '../../img/logo.jpg'
 import './topbar.css'
 
@@ -44,10 +45,15 @@ function Topbar() {
               </button>
             </Col>
 
-            <Col lg={7} md={7}>
-              <Input></Input>
 
+            <Col lg={7} className='d-lg-block d-md-none'>
+              <Input></Input>
             </Col>
+
+            <Col md={7} className='d-md-block d-lg-none'>
+              <InputMd />
+            </Col>
+
             <Col lg={3} md={4}>
               <Row className='site-heard-user'>
                 <Col>
