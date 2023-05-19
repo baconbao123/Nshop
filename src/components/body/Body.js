@@ -29,7 +29,7 @@ const ProductsAll = () => {
    return (
       <>
          {/* Phần Product (sản phẩm) */}
-         <Products/>
+         <Products />
       </>
    );
 };
@@ -47,51 +47,50 @@ const Address = () => {
    return (
       <>
          {/* Phần hệ thống cửa hàng */}
-        <System/>
+         <System />
       </>
    );
 };
 // Ipad Air
-const category =()=>{
-   return(
+const category = () => {
+   return (
       <>
          {/* Phần Danh Mục   */}
-        <Category/>
+         <Category />
       </>
    )
 }
 export default function Body() {
    return (
       <>
-      <Container className="body container-lg container-fluid">
-         <Row>
-            <Col lg={3} className='d-md-none d-lg-block'>
-               <div className="scroll-container">
-                  <div className="scroll-content">
-                     <Slidebar></Slidebar>
+         <Container className="body container-lg container-fluid">
+            <Row>
+               <Col lg={3} className='d-md-none d-lg-block'>
+                  <div className="scroll-container">
+                     <div className="scroll-content">
+                        <Slidebar></Slidebar>
+                     </div>
                   </div>
-               </div>
-            </Col>
-            {/* <Col lg={9} md={12} className='body-content'> */}
-            <Col lg={9} md={12}>
+               </Col>
+               {/* <Col lg={9} md={12} className='body-content'> */}
+               <Col lg={9} md={12}>
                   <Routes>
                      <Route path="/" element={<Home />} />
                      <Route path="/productsall" element={<ProductsAll />} />
                      <Route path="/blog" element={<Blog />} />
-                     <Route path="/store" element={<Address />} />
-                     <Route path="/category" element={<Category/>}/>
+                     <Route path="/store" element={<Address />} />   
                   </Routes>
-            </Col>
-         </Row>
-         <Routes>
-                     <Route path="/" element={ <Footer/>} />
-                     <Route path="/productsall" element={ <Footer/>} />
-                     <Route path="/blog" element={ <Footer/>} />
-                     <Route path="/store" element={ <Footer/>} />
-                     <Route path="/category"/>
-                  </Routes>
-      </Container>
-      <BottomNav/>
+               </Col>
+            </Row>
+            <Routes>
+               <Route path="/" element={<Footer />} />
+               <Route path="/productsall" element={<Footer />} />
+               <Route path="/blog" element={<Footer />} />
+               <Route path="/store" element={<Footer />} />
+               <Route path="/category" element={<Category />}/>
+            </Routes>
+         </Container>
+         <BottomNav />
 
       </>
    );
