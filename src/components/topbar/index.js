@@ -81,7 +81,7 @@ function Topbar() {
     <Row> 
     <SlideMd showButtonSlide={showButtonSlide}/>
 
-    </Row>
+    </Row> 
 
     </>
   )

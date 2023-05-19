@@ -55,7 +55,8 @@
     cursor: pointer;
 }
 .site-heard-user a span{
-    justify-items:center
+    justify-items:center;
+    display: inline-flex;
 }
 .shopping-cart{
     font-size: 25px;
