@@ -7,11 +7,11 @@ function App() {
    return (
       <Router>
             <>
-            {/* TOP NAVIGATION -PHI LONG */}
+            {/* TOP NAVIGATION -PHI LONG */} 
             <Topbar/>
          
             {/* BOT NAVIGATION -PHUONG ANH */}
-            <div className='d-md-none d-lg-block'>
+            <div className='d-none d-md-none d-lg-block'>
                <NavigationBar />
             </div>
             

@@ -6,7 +6,6 @@ import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import { useState,createContext} from 'react';
 import Input from './Input'
-import InputMd from './InputMd';
 import logo from '../../img/logo.jpg'
 import './topbar.css'
 
@@ -39,22 +38,26 @@ function Topbar() {
               <span className='text-logo'>NSHOP</span>
             </Col>
 
-            <Col md={1} className='d-lg-none d-md-block' ref={showButtonSlide}>
+            <Col md={1} xs={1} className='d-lg-none d-block d-md-block ' ref={showButtonSlide}>
               <button>
-                <span><MdOutlineApps className="icon-act" /> </span>
+                <span><MdOutlineApps className="icon-act"/> </span>
               </button>
             </Col>
 
 
-            <Col lg={7} className='d-lg-block d-md-none'>
+            <Col lg={7} md={7} className='d-lg-block d-md-block d-none'>
               <Input></Input>
             </Col>
 
-            <Col md={7} className='d-md-block d-lg-none'>
-              <InputMd />
+            <Col xs={1} className='d-lg-none d-md-none d-block'>
+              <></>
             </Col>
 
-            <Col lg={3} md={4}>
+            <Col xs={10} className='d-lg-none d-md-none d-block'>
+              <Input></Input>
+            </Col>
+
+            <Col lg={3} md={4} className='d-lg-block d-md-block d-none'>
               <Row className='site-heard-user'>
                 <Col>
                   <a href="#" onClick={() => setShowModal(true)}>

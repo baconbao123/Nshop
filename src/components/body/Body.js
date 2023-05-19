@@ -63,9 +63,9 @@ const category = () => {
 export default function Body() {
    return (
       <>
-         <Container className="body container-lg container-fluid">
+         <div className="body container-lg container-fluid">
             <Row>
-               <Col lg={3} className='d-md-none d-lg-block'>
+               <Col lg={3} className='d-none d-md-none d-lg-block'>
                   <div className="scroll-container">
                      <div className="scroll-content">
                         <Slidebar></Slidebar>
@@ -73,7 +73,7 @@ export default function Body() {
                   </div>
                </Col>
                {/* <Col lg={9} md={12} className='body-content'> */}
-               <Col lg={9} md={12}>
+               <Col lg={9} md={12} xs={12}>
                   <Routes>
                      <Route path="/" element={<Home />} />
                      <Route path="/productsall" element={<ProductsAll />} />
@@ -83,7 +83,7 @@ export default function Body() {
                </Col>
             </Row>
 
-         </Container>
+         </div>
          <Routes>
             <Route path="/" element={<Footer />} />
             <Route path="/productsall" element={<Footer />} />

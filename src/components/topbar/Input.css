@@ -5,7 +5,6 @@
     
 }
 .title {
-   
     margin: auto;
 }
 .title-search {
@@ -16,3 +15,9 @@
 
 }
 
+@media only screen and (min-width: 390px) and (max-width:840px) {
+    .title {
+        margin: auto;
+        font-size: 10px;
+    }
+}
