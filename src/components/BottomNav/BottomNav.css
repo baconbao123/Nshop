@@ -8,7 +8,7 @@
     position: fixed;
     right: 0;
     left: 0;
-    bottom:0;
+    bottom:-3px;
     z-index: 1 ;
 }
 .nav-link-md a{
@@ -21,8 +21,16 @@ text-decoration: none;
 color: #000;
 font-size: .8rem;
 font-weight: 400;
+padding: 8px 0;
 
 }
 .icon-nav-md{
 font-size: 1.3rem;
+}
+/*active*/
+.active-bottom-nav{
+    background-color: #427AA9;
+}
+.active-bottom-nav>a>span{
+    color: #FFFFFF;
 }
