@@ -78,18 +78,19 @@ export default function Body() {
                      <Route path="/" element={<Home />} />
                      <Route path="/productsall" element={<ProductsAll />} />
                      <Route path="/blog" element={<Blog />} />
-                     <Route path="/store" element={<Address />} />   
+                     <Route path="/store" element={<Address />} />
                   </Routes>
                </Col>
             </Row>
-            <Routes>
-               <Route path="/" element={<Footer />} />
-               <Route path="/productsall" element={<Footer />} />
-               <Route path="/blog" element={<Footer />} />
-               <Route path="/store" element={<Footer />} />
-               <Route path="/category" element={<Category />}/>
-            </Routes>
+
          </Container>
+         <Routes>
+            <Route path="/" element={<Footer />} />
+            <Route path="/productsall" element={<Footer />} />
+            <Route path="/blog" element={<Footer />} />
+            <Route path="/store" element={<Footer />} />
+            <Route path="/category" element={<Category />} />
+         </Routes>
          <BottomNav />
 
       </>
