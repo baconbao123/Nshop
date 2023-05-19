@@ -6,6 +6,8 @@
     border-top: 1px solid #F0F2F5 ;
     
     position: fixed;
+    right: 0;
+    left: 0;
     bottom:0;
     z-index: 1 ;
 }
