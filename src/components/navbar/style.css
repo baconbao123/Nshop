@@ -32,6 +32,8 @@
    color: white;
 }
 
+
+
 .nav .home-item,
 .nav .product-item,
 .nav .blog-item,
@@ -61,6 +63,12 @@
    padding: 1px;
    padding-top: 10px;
    display: inline-block;
+}
+
+@media only screen and (min-width: 992.97px) and (max-width: 1440px) {
+   .nav .add-item {
+     display: none;
+   }
 }
 
 .nav .dropdown .btn {
