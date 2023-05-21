@@ -41,7 +41,7 @@ function Topbar() {
               <span className='text-logo'>NSHOP</span>
             </Col>
 
-            <Col md={1} className='d-lg-none d-md-block' ref={showButtonSlide} >
+            <Col md={1} xs={1} className='d-lg-none d-md-block d-block' ref={showButtonSlide} >
               <button>
                 <span><MdOutlineApps className="icon-act"/> </span>
               </button>
@@ -52,9 +52,7 @@ function Topbar() {
               <Input></Input>
             </Col>
 
-            <Col md={7} className='d-md-block d-lg-none' >
-           
-            </Col>
+            <Col xs={1} className='d-lg-none d-md-none d-block'></Col>
 
             <Col xs={10} className='d-lg-none d-md-none d-block'>
               <Input></Input>
