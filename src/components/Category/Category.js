@@ -76,7 +76,7 @@ function Category() {
   );
   return (
    
-    <Row className='container-category'>
+    <Row className='container-category d-lg-none'>
        <Col xs={3} md={3} className='ul-3'>
       <ul className="ul-category " >
         {
