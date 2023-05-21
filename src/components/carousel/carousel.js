@@ -7,7 +7,7 @@ import banner4 from '../../img/banner4.jpg'
 
 function CarouselSlide() {
   return (
-    <Carousel variant="dark" interval={1000}>
+    <Carousel variant="dark" interval={1000} className='mt-4'>
       <Carousel.Item>
         <img
           className="d-block w-100"
