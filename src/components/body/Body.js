@@ -12,8 +12,8 @@ import BottomNav from '../BottomNav/BottomNav';
 import Footer from '../footer/footer';
 import Category from '../Category/Category';
 import SlideMd from '../SidebarMd/SlideMd';
-
-
+import Account from '../Account/Account';
+import Cart from '../Cart/Cart';
 
 const Home = () => {
    return (
@@ -60,6 +60,22 @@ const category = () => {
       </>
    )
 }
+const cart= () => {
+   return (
+      <>
+         {/* Phần Danh Mục   */}
+         <Cart />
+      </>
+   )
+}
+const account = () => {
+   return (
+      <>
+         {/* Phần Danh Mục   */}
+         <Account />
+      </>
+   )
+}
 export default function Body() {
    return (
       <>
@@ -90,6 +106,8 @@ export default function Body() {
             <Route path="/blog" element={<Footer />} />
             <Route path="/store" element={<Footer />} />
             <Route path="/category" element={<Category />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/account" element={<Account />} />
          </Routes>
          <BottomNav />
 
