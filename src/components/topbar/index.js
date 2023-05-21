@@ -60,12 +60,12 @@ function Topbar() {
 
             <Col lg={3} md={4} className='d-lg-block d-md-block d-none'>
               <Row className='site-heard-user'>
-                <Col lg={6}>
+                <Col lg={6} md={6}>
                   <a href="#" onClick={() => setShowModal(true)}>
                     <span className='shopping-cart-bage' data-count="4"> <AiOutlineShoppingCart className='shopping-cart' /> Giỏ hàng</span>
                   </a>
                 </Col>
-                <Col lg={6}>
+                <Col lg={6} md={6}>
                   <a href="/#" onClick={() => setShowModal(true)}>
                     <span><AiOutlineUser className='user' /> Tài khoản</span>
                   </a>
