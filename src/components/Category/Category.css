@@ -9,6 +9,9 @@
     min-height: 100vh;
 }
 /*col-md3*/
+.ul-3 {
+    padding: 0px!important;
+}
 .icon-sidebar{
     text-align: center;
 }
@@ -18,7 +21,6 @@
     position: sticky;
     height: calc(100vh - 100px) ;
     overflow-y: overlay;
-  
 }
 .ul-category::-webkit-scrollbar {
     width: 0px;
@@ -36,6 +38,7 @@
     height: calc(100vh - 100px) ;
     overflow-y: auto;
     padding-right: 10px;
+    padding-left: 10px;
 }
 
 

@@ -77,7 +77,7 @@ function Category() {
   return (
    
     <Row className='container-category'>
-       <Col xs={3} md={3}>
+       <Col xs={3} md={3} className='ul-3'>
       <ul className="ul-category " >
         {
           items.map((item, index) => (
