@@ -70,3 +70,10 @@
     width: 20%!important    ;
 
 }
+@media (max-width: 767px )  {
+    .card-grid {
+        display: grid;
+        width: 50%!important    ;
+    
+    }
+}

@@ -21,7 +21,7 @@ display:${props=>props.show===false&&'none!important'}
 
 
 export default function SlideMd({ showButtonSlide}) {
-    const [show,setShow]=useState(true);
+    const [show,setShow]=useState(false);
     const [site,setSite]=useState([]);
     const contact= [
         {content:'Hotline Tân Phú',infor:'0902 643 978'},
@@ -72,7 +72,7 @@ export default function SlideMd({ showButtonSlide}) {
     },[])
 
         useEffect(()=>{
-            if(showButtonSlide.current  ) {
+            if(showButtonSlide.current ) {
             showButtonSlide.current.addEventListener('click',handleClick);
                 
             }
@@ -85,13 +85,13 @@ export default function SlideMd({ showButtonSlide}) {
     return(
         <>
         
-            <Div className='d-lg-none d-md-block slideMd' show={show}>
-            <Col ref={slideBarRef} md={4}   className=' slideMd-content' >
+            <Div className='d-lg-none d-md-block  d-xs-block slideMd ' show={show}>
+            <Col ref={slideBarRef} md={4    }  xs={9} className=' slideMd-content' >
             <div className='slideMd-container'>
 
             <div className='slideMd-title'>
                 <img src={logo} width='50'></img>
-                <h4 className='d-inline-block'>N-shop</h4>
+                <h4 className='d-inline-block'>N-shop </h4>
             </div>
          
             </div>
@@ -126,6 +126,8 @@ export default function SlideMd({ showButtonSlide}) {
             </Col>
             
             </Div>
+            
+            
       
           
 

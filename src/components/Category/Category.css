@@ -20,7 +20,9 @@
     overflow-y: overlay;
   
 }
-
+.ul-category::-webkit-scrollbar {
+    width: 0px;
+}
 .ul-category li{
     text-align: center;
     cursor: pointer;
@@ -33,8 +35,10 @@
     position: sticky;
     height: calc(100vh - 100px) ;
     overflow-y: auto;
+    padding-right: 10px;
 }
-/*active khi click vào item-category*/
+
+
 .active-sidebar-md{
     border-left: 3px solid #427AA9 ;
     background-color: #fff;
@@ -42,7 +46,7 @@
 /**/
 .childList-sidebar{
     padding-left: 0px;
-    width: calc(100vw - 37%);
+ 
     
     font-size:.875rem;
     font-weight: 400;
@@ -66,7 +70,8 @@
     border: 1px solid #EEEEEE;
     font-weight: 500;
     margin-top: 10px;
-    width: calc(100vw - 37%);
+    width: inherit;
+    padding-right: 10px;
 }
 .icon-folder{
     transform: rotate(90deg);

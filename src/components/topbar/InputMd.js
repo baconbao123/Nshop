@@ -6,13 +6,19 @@ import { AiOutlineShoppingCart } from 'react-icons/ai'
 import { AiOutlineUser } from 'react-icons/ai'
 import { VscSearch } from 'react-icons/vsc'
 import styled from 'styled-components'
-import './Input.css'
+import './InputMd.css'
 const Div=styled.div`
- height:${props=>props.input===''?'150px':'50px'};
- display:${props=>props.show ?"flex":'none'};
+  position: fixed;
+  top: 50px;
+  left: 0;
+  bottom: 100px;
+  z-index: 1;
+  width: 100%;
+  height: 1080px;
+  display:${props=>props.show ?"flex":'none'};
 `
-export default function Input() {
-  console.log('rerender input js');
+export default function InputMd() {
+  console.log('rerender inputmd');
   const [input,setInput]=useState('');
   const [show,setShow]=useState(false);
   const InputRef=useRef()

@@ -15,6 +15,7 @@
     
     z-index: 3;
     background-color: #fff;
+    animation: slide-right 0.5s forwards;
     
 }
 .slideMd-title {
@@ -48,3 +49,14 @@
     color: #939bb1;
     font-size: 0.8rem;
 }
+
+@keyframes slide-right {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }

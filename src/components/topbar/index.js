@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useCallback, useEffect, useRef } from 'react'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -24,7 +24,10 @@ import SlideMd from '../SidebarMd/SlideMd';
  
 function Topbar() {
   const [showModal, setShowModal] = useState(false)
+  const [showInput,setShowInput]=useState(false)
   const showButtonSlide=useRef(null)
+
+
   // console.log(showButtonSlide.current);
   return (
     <>
@@ -38,7 +41,7 @@ function Topbar() {
               <span className='text-logo'>NSHOP</span>
             </Col>
 
-            <Col md={1} xs={1} className='d-lg-none d-block d-md-block ' ref={showButtonSlide}>
+            <Col md={1} className='d-lg-none d-md-block' ref={showButtonSlide} >
               <button>
                 <span><MdOutlineApps className="icon-act"/> </span>
               </button>
@@ -49,8 +52,8 @@ function Topbar() {
               <Input></Input>
             </Col>
 
-            <Col xs={1} className='d-lg-none d-md-none d-block'>
-              <></>
+            <Col md={7} className='d-md-block d-lg-none' >
+           
             </Col>
 
             <Col xs={10} className='d-lg-none d-md-none d-block'>
@@ -59,12 +62,12 @@ function Topbar() {
 
             <Col lg={3} md={4} className='d-lg-block d-md-block d-none'>
               <Row className='site-heard-user'>
-                <Col>
+                <Col lg={6}>
                   <a href="#" onClick={() => setShowModal(true)}>
                     <span className='shopping-cart-bage' data-count="4"> <AiOutlineShoppingCart className='shopping-cart' /> Giỏ hàng</span>
                   </a>
                 </Col>
-                <Col>
+                <Col lg={6}>
                   <a href="/#" onClick={() => setShowModal(true)}>
                     <span><AiOutlineUser className='user' /> Tài khoản</span>
                   </a>
@@ -82,7 +85,7 @@ function Topbar() {
       </div>
     </nav>
     <Row> 
-    <SlideMd showButtonSlide={showButtonSlide}/>
+    <SlideMd showButtonSlide={showButtonSlide} showInput={showInput}/>
 
     </Row> 
 

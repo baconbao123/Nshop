@@ -20,28 +20,28 @@ function BottomNav() {
         <div className='container'>
             <Row className='d-lg-none d-md-flex nav-md '>
                 {/* Home */}
-                <Col md={3}  className={`nav-link-md ${activeLink === '/' ? 'active-bottom-nav' : ''}`} >
+                <Col md={3} xs={3} className={`nav-link-md ${activeLink === '/' ? 'active-bottom-nav' : ''}`} >
                     <Link as={Link} to="/" >
                         <span className='icon-nav-md'><SlHome /></span>
                         <span  >NShop.com</span>
                     </Link>
                 </Col>
                 {/* Category*/}
-                <Col md={3} className={`nav-link-md ${activeLink === '/category' ? 'active-bottom-nav' : ''}`} >
+                <Col md={3} xs={3} className={`nav-link-md ${activeLink === '/category' ? 'active-bottom-nav' : ''}`} >
                     <Link as={Link} to="/category" >
                         <span className='icon-nav-md'><CgMenuGridO /></span>
                         <span>Danh mục</span>
                     </Link>
                 </Col>
                 {/* Cart */}
-                <Col md={3} className={`nav-link-md ${activeLink === '/cart' ? 'active-bottom-nav' : ''}`} >
+                <Col md={3}  xs={3} className={`nav-link-md ${activeLink === '/cart' ? 'active-bottom-nav' : ''}`} >
                     <Link as={Link} to="/cart">
                         <span className='icon-nav-md'><AiOutlineShoppingCart /></span>
                         <span>Giỏ hàng</span>
                     </Link>
                 </Col>
                 {/*Account*/}
-                <Col md={3} className={`nav-link-md ${activeLink === '/account' ? 'active-bottom-nav' : ''}`} >
+                <Col md={3}  xs={3} className={`nav-link-md ${activeLink === '/account' ? 'active-bottom-nav' : ''}`} >
                     <Link as={Link} to="/account" >
                         <span className='icon-nav-md'><AiOutlineUser /></span>
                         <span>Tài Khoản</span>

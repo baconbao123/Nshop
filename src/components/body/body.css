@@ -1,6 +1,7 @@
 .body{
     margin-top: 14px;
     position: relative;
+    
 }
 .scroll-container {
     height: calc(100vh - 75px) ;

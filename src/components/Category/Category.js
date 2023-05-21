@@ -75,8 +75,10 @@ function Category() {
     </ul>
   );
   return (
+   
     <Row className='container-category'>
-      <ul className="ul-category col-md-3" >
+       <Col xs={3} md={3}>
+      <ul className="ul-category " >
         {
           items.map((item, index) => (
             <li key={index} onClick={() => handleClickItem(index)} className={`li-category ${index === activeItemIndex ? "active-sidebar-md" : ""}`} >
@@ -85,11 +87,13 @@ function Category() {
           ))
         }
       </ul>
-
-      <ul className='container-sidebar col-md-9'>
+    </Col>
+    <Col xs={9} md={9}>
+      <ul className='container-sidebar '>
         <li className='content-category'><RiFolderOpenLine className='icon-folder'/> {selectedContent}</li> {/* Hiển thị nội dung được chọn */}
         {selectedItem && <ChildCategory childArray={selectedItem.child}  />}
       </ul>
+    </Col>
     </Row>
   )
 }

@@ -7,9 +7,9 @@ const ProductList = ({ products }) => {
     
     return (
         <div className='product-list'>
-            <Row className="card-product">
+            <Row className="card-product" >
                 {products.map((product,index) => (
-                    <div className='card-grid' key={index}>
+                    <div className='card-grid'  key={index}>
                         <Card  product={product} />
                     </div>
                 ))}
