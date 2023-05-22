@@ -60,7 +60,7 @@ const category = () => {
       </>
    )
 }
-const cart= () => {
+const cart = () => {
    return (
       <>
          {/* Phần Danh Mục   */}
@@ -95,6 +95,8 @@ export default function Body() {
                      <Route path="/productsall" element={<ProductsAll />} />
                      <Route path="/blog" element={<Blog />} />
                      <Route path="/store" element={<Address />} />
+                     <Route path="/cart" element={<Cart />} />
+                     <Route path="/account" element={<Account />} />
                   </Routes>
                </Col>
             </Row>
@@ -106,8 +108,7 @@ export default function Body() {
             <Route path="/blog" element={<Footer />} />
             <Route path="/store" element={<Footer />} />
             <Route path="/category" element={<Category />} />
-            <Route path="/cart" element={<Cart />} />
-            <Route path="/account" element={<Account />} />
+
          </Routes>
          <BottomNav />
 

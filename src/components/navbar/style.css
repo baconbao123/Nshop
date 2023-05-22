@@ -99,3 +99,13 @@
 .dropdown-nav-contact{
  
 }
+/*Active nav*/
+.active-top-nav span::after {
+   content: "";
+   display:block;
+   width: 80%;
+   height: 1px;
+   background-color: #efefef;
+   margin-top: 2px!important;
+   margin: auto;
+}
