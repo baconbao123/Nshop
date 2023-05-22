@@ -12,7 +12,7 @@ const Div=styled.div`
  display:${props=>props.show ?"flex":'none'};
 `
 export default function Input() {
-  console.log('rerender input js');
+
   const [input,setInput]=useState('');
   const [show,setShow]=useState(false);
   const InputRef=useRef()
